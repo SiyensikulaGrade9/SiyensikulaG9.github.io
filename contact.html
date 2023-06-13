@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <h1 class="heading">Heat and Light</h1>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Introduction</a></li>
+            <li><a href="about.html">Work, Force and Energy</a></li>
+            <li><a href="service.html">Projectile Motion</a></li>
+            <li><a href="plan.html">Impulse and Momentum</a></li>
+            <li><a href="contact.html">Heat and Light</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact">
+
+    <div class="image">
+        <img src="media/pic5.png" alt="">
+        <img src="media/play.png" class="play-btn" onclick="playVideo('media/vid5.mp4')">
+    </div>
+
+
+        <div class="content">
+            <h3>Heat and Light</h3>
+            <p>Heat and light are two essential forms of energy that are ubiquitous in our daily lives. Heat is the transfer of thermal energy from one object to another due to a temperature difference, while light is a type of electromagnetic radiation that we can see with our eyes. Both heat and light play a significant role in many aspects of our lives, from the warmth of the sun on our skin to the light that illuminates our surroundings. In this article, we will explore the fundamental principles of heat and light, including their characteristics, sources, and effects on matter. We will also examine how heat and light interact with each other, as well as their practical applications in various fields, from energy generation to medicine.
+            </p>
+            <a href="HEAT AND LIGHT.pdf"> Download PDF</a>
+        </div>
+        <div class="video-player" id="videoPlayer">
+            <video width="100%" controls id="myVideo">
+                <source src="media/vid5.mp4" type="video/mp4">
+            </video>
+          <img src="media/close.png" class="close-btn" 
+          onclick="stopVideo()">
+        </div>
+        <script>
+        
+            var videoPlayer = document.getElementById("videoPlayer");
+            var myVideo = document.getElementById("myVideo");
+    
+            function stopVideo(){
+    
+                videoPlayer.style.display = "none";
+    
+            }
+    
+            function playVideo(file){
+                myVideo.src = file;
+                videoPlayer.style.display = "block";
+            }
+        </script>
+
+</section>
+
+<!-- contact section ends -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>SCI-WEB</h3>
+            <p>CULTURE ORIENTED WEB-BASED DELIVERY OF GRADE 9 SCIENCE LESSON</p>
+        </div>
+
+        <div class="box">
+            <h3>Members</h3>
+            <a href="https://www.facebook.com/asherrayniel.calalo.3">Calalo, Asher Rayniel B.</a>
+            <a href="https://www.facebook.com/belle.acuna.1219">Acuña, Crizza Belle I.</a>
+            <a href="https://www.facebook.com/kiarasisley.fider">Fider, Kiara Sisley M.</a>
+            <a href="https://www.facebook.com/jeremae.manoy">Manoy, Jeremae S.</a>
+        </div>
+
+        <div class="box">
+            <h3>Any Suggestions?</h3>
+            <p>Send us your suggestions</p>
+            <form action="">
+                <input type="email" placeholder="Type Here">
+                <input type="submit" class="btn" value="Send">
+            </form>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <a href="#">Sci-Web</a> | all rights reserved. </h1>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

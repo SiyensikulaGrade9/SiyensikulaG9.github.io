@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <h1 class="heading">Work, Force, Energy</h1>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Introduction</a></li>
+            <li><a href="about.html">Work, Force and Energy</a></li>
+            <li><a href="service.html">Projectile Motion</a></li>
+            <li><a href="plan.html">Impulse and Momentum</a></li>
+            <li><a href="contact.html">Heat and Light</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- about section start  -->
+
+<section class="about">
+
+    <div class="image">
+        <img src="media/pic2.png" alt="">
+        <img src="media/play.png" class="play-btn" onclick="playVideo('media/vid2.mp4')">
+    </div>
+
+    <div class="content">
+        <h1>Work, Force and Energy</h1>
+        <p>Work, force, and energy are fundamental concepts in physics that help us understand how objects move and interact with each other. Work is the transfer of energy that occurs when a force is applied to an object and it moves in the direction of that force. Force is any influence that causes an object to undergo a change in motion, while energy is the ability to do work. These concepts are interrelated, and understanding their relationships is crucial in many fields, from engineering to medicine. In this article, we will explore the fundamental principles of work, force, and energy, including their units, calculations, and applications in the real world. We will also examine the various types of energy and their transformations, as well as the conservation of energy and its implications for our understanding of the universe.</p>
+        <a href="WORK, FORCE AND ENERGY.pdf"> Download PDF</a>
+    </div>
+
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls id="myVideo">
+            <source src="media/vid2.mp4" type="video/mp4">
+        </video>
+      <img src="media/close.png" class="close-btn" 
+      onclick="stopVideo()">
+    </div>
+    <script>
+        
+        var videoPlayer = document.getElementById("videoPlayer");
+        var myVideo = document.getElementById("myVideo");
+
+        function stopVideo(){
+
+            videoPlayer.style.display = "none";
+
+        }
+
+        function playVideo(file){
+            myVideo.src = file;
+            videoPlayer.style.display = "block";
+        }
+    </script>
+
+</section>
+
+<!-- about section ends -->
+
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>SCI-WEB</h3>
+            <p>CULTURE ORIENTED WEB-BASED DELIVERY OF GRADE 9 SCIENCE LESSON</p>
+        </div>
+
+        <div class="box">
+            <h3>Members</h3>
+            <a href="https://www.facebook.com/asherrayniel.calalo.3">Calalo, Asher Rayniel B.</a>
+            <a href="https://www.facebook.com/belle.acuna.1219">Acuña, Crizza Belle I.</a>
+            <a href="https://www.facebook.com/kiarasisley.fider">Fider, Kiara Sisley M.</a>
+            <a href="https://www.facebook.com/jeremae.manoy">Manoy, Jeremae S.</a>
+        </div>
+
+        <div class="box">
+            <h3>Any Suggestions?</h3>
+            <p>Send us your suggestions</p>
+            <form action="">
+                <input type="email" placeholder="Type Here">
+                <input type="submit" class="btn" value="Send">
+            </form>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <a href="#">Sci-Web</a> | all rights reserved. </h1>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
